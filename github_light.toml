@@ -1,0 +1,142 @@
+
+# Author : Orhan Balcı <orhanbalci@gmail.com>
+
+"attribute" = { fg = "syntax_constant" }
+"comment" = { fg = "syntax_comment", modifiers = ["italic"] }
+"constant" = { fg = "syntax_constant" }
+"constant.numeric" = { fg = "syntax_constant" }
+"constant.builtin" = { fg = "syntax_constant" }
+"constant.character.escape" = { fg = "syntax_constant" }
+"constructor" = { fg = "syntax_func" }
+"function" = { fg = "syntax_func" }
+"function.builtin" = { fg = "syntax_func" }
+"function.macro" = { fg = "syntax_func" }
+"keyword" = { fg = "syntax_keyword" }
+"keyword.control" = { fg = "syntax_keyword" }
+"keyword.control.import" = { fg = "syntax_keyword" }
+"keyword.directive" = { fg = "syntax_keyword" }
+"label" = { fg = "syntax_constant" }
+"namespace" = { fg = "fg" }
+"operator" = { fg = "fg" }
+"keyword.operator" = { fg = "syntax_keyword" }
+"property" = { fg = "syntax_constant" }
+"special" = { fg = "syntax_variable" }
+"string" = { fg = "syntax_string" }
+"type" =  { fg = "syntax_type" }
+# "variable" = { fg = "syntax_variable" }
+"variable.builtin" = { fg = "syntax_variable" }
+"variable.parameter" = { fg = "syntax_func_param" }
+"variable.other.member" = { fg = "syntax_func_param" }
+
+"markup.heading" = { fg = "syntax_func_param" }
+"markup.raw.inline" = { fg = "green" }
+"markup.bold" = { fg = "gold", modifiers = ["bold"] }
+"markup.italic" = { fg = "purple", modifiers = ["italic"] }
+"markup.list" = { fg = "syntax_func_param" }
+"markup.quote" = { fg = "yellow" }
+"markup.link.url" = { fg = "cyan", modifiers = ["underlined"]}
+"markup.link.text" = { fg = "purple" }
+
+"diff.plus" = "diff_plus"
+"diff.delta" = "diff_change"
+"diff.minus" = "diff_delete"
+
+diagnostic = { modifiers = ["underlined"] }
+"info" = { fg = "info", modifiers = ["bold"] }
+"hint" = { fg = "hint", modifiers = ["bold"] }
+"warning" = { fg = "warning", modifiers = ["bold"] }
+"error" = { fg = "error", modifiers = ["bold"] }
+
+"ui.background" = { bg = "bg" }
+"ui.background.separator" = "border"
+"ui.cursor" = { fg = "cursor", modifiers = ["reversed"] }
+"ui.cursor.primary" = { fg = "fg", modifiers = ["reversed"] }
+"ui.cursor.match" = { bg = "syntax_match_paren_bg", modifiers = ["underlined"]}
+"ui.cursor.insert" = { fg = "fg", bg = "bg" }
+"ui.cursor.select" = { fg = "bg2", bg = "blue" }
+"ui.cursorline.primary" = { bg = "bg2" }
+"ui.cursorline.secondary" = { bg = "bg2" }
+
+"ui.selection" = { bg = "bg_visual" }
+"ui.selection.primary" = { bg = "bg_visual_selection" }
+
+"ui.linenr" = { fg = "line_nr", modifiers = ["dim"] }
+"ui.linenr.selected" = { fg = "fg_gutter" }
+
+"ui.statusline" = { fg = "fg_dark", bg = "pmenu_bg" }
+"ui.statusline.inactive" = { fg = "fg", bg = "pmenu_bg" }
+"ui.statusline.normal" = { fg = "fg_dark", bg = "pmenu_bg", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg", bg = "syntax_keyword", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg", bg = "syntax_match_paren_bg", modifiers = ["bold"] }
+
+"ui.bufferline" = { fg = "pmenu_bg", bg = "fg_dark" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg", modifiers = ["bold"] }
+
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "fg", bg = "bg2", modifiers = ["bold"] }
+
+"ui.help" = { bg = "bg2" }
+"ui.popup" = { bg = "bg2" }
+"ui.window" = { bg = "bg2" }
+"ui.menu.selected" = { fg = "fg_dark", bg = "bg_visual_selection" }
+"ui.menu" = { fg = "fg", bg = "bg2" }
+
+"ui.virtual.whitespace" = { fg = "line_nr",  modifiers = ["dim"]}
+"ui.virtual.indent-guide" = { fg = "line_nr", modifiers = ["dim"] }
+"ui.virtual.ruler" = { bg = "bg2" }
+
+[palette]
+bg = '#ffffff'
+bg2 = '#f6f8fa'
+
+# foreground color
+fg = '#24292f'
+fg_dark = '#666666'
+fg_gutter = '#babbbd'
+fg_light = '#586069'
+fg_term = '#24292f'
+
+# Background Highlights Colors
+bg_highlight = '#d5e5f6'
+bg_search = '#fff2be'
+bg_visual = '#e1e4e8'
+bg_visual_selection = '#dbe9f9'
+border = '#044289'
+
+# Cursor & LineNumber Colors
+cursor = '#044289'
+cursor_line_nr = '#24292e'
+line_nr = '#babbbd'
+
+# LSP & Diagnostic Colors
+error = '#cb2431'
+warning = '#bf8803'
+info = '#75beff'
+hint = '#6c6c6c'
+
+# Auto-Completion Colors
+pmenu_bg = '#f6f8fa' 
+pmenu_sbar = '#f0f1f3'
+
+diff_plus = '#d4f8db'
+diff_plus_fg = '#22863a'
+diff_change = '#fff5b1'
+diff_change_fg = '#b08800'
+diff_delete = '#fae5e7'
+diff_delete_fg = '#cb2431'
+
+# syntax colors
+syntax_comment = '#6a737d'
+syntax_constant = '#005cc5'
+syntax_string = '#032f62'
+syntax_variable = '#005cc5'
+syntax_keyword = '#d73a49'
+syntax_func = '#6f42c1'
+syntax_func_param = '#24292e'
+syntax_match_paren_bg = '#c6eed2'
+syntax_tag = '#22863a'
+syntax_html_arg = '#b31d28'
+syntax_param = '#e36209'
+syntax_json_label = '#005cc5'
+syntax_type = '#953800'
+
